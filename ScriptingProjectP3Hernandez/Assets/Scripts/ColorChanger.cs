@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class ColorChanger : MonoBehaviour
@@ -12,7 +13,12 @@ public class ColorChanger : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
+    {if (Input.GetKeyDown(KeyCode.R)) 
+            GetComponent Componet<Renderer>().Material.color = Color.red;
         
     }
+     If(Input.getkeydown(KeyCode.g))
+        GetComponet<Renderer>().Material.collor = Color.Green;
 }
+    if(Input.GetKeyDown(KeyCode.G))
+    
